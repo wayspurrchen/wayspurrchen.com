@@ -1,0 +1,210 @@
+@media (min-width: 0px) {
+	.long-layout-hide {
+		display: none;
+	}
+	.container {
+		max-width: 260px;
+	}
+	.masthead {
+		text-align: center;
+	}
+	.full-name {
+		height: 160px;
+	}
+	.first-name {
+		margin-top: 10px;
+		font-size: 120px;
+		line-height: 110px;
+	}
+	.last-name {
+		font-size: 39px;
+		position: relative;
+		top: -14px;
+	}
+	.job-title {
+		font-size: 20px;
+	}
+	.summary {
+		font-size: 18px;
+		margin-top: 10px;
+	}
+	.social-media {
+		margin: 10px 0 0;
+		text-align: center;
+	}
+	.social-media .fa {
+		font-size: 54px;
+	}
+	.social-media li {
+		margin: 0 10px;
+	}
+	.social-media li:first-child {
+		margin-left: 0;
+	}
+	.social-media li:last-child {
+		margin-right: 0;
+	}
+	.title-seg {
+		display: none;
+	}
+	.project-pixelsorter .pixelsorter-timeline {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+@media (min-width: 440px) {
+	.container {
+		max-width: none;
+	}
+	.avatar-social-summary {
+
+	}
+	.full-name {
+		height: auto;
+	}
+	.last-name {
+		top: 0;
+	}
+	.first-name, .last-name {
+		font-size: 44px;
+		line-height: 44px;
+	}
+	.job-title {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 474px) {
+	.title-seg.one {
+		display: inline;
+	}
+}
+
+@media (min-width: 534px) {
+	.title-seg.two {
+		display: inline;
+	}
+}
+
+@media (min-width: 540px) {
+	.container {
+		max-width: 520px;
+	}
+	.masthead {
+		margin: 0 auto;
+	}
+	.avatar-social {
+		margin-left: 8px;
+	}
+}
+
+@media (min-width: 740px) {
+	/*.full-name {
+		margin-bottom: 0;
+	}*/
+	/*.job-title {
+		margin-top: 0;
+	}*/
+	.title-seg.three {
+		display: inline;
+	}
+	/*.first-name, .last-name {
+		font-size: 83px;
+		line-height: 59px;
+	}*/
+	.container {
+		max-width: 760px;
+	}
+}
+
+@media (min-width: 770px) {
+	.title-seg.four {
+		display: inline;
+	}
+}
+
+@media (min-width: 800px) {
+	.flag-layout-hide {
+		display: none;
+	}
+	.long-layout-hide {
+		display: inherit;
+	}
+	body {
+		padding: 20px;
+	}
+	.navigation {
+		width: 20%;
+		float: left;
+	}
+	.container {
+		max-width: 1140px;
+	}
+	.avatar-social-summary {
+		float: left;
+		/*max-width: 256px;*/
+		width: 256px;
+	}
+	.avatar-social {
+		margin-left: 0;
+	}
+	.avatar {
+		clear: both;
+		display: block;
+	}
+	.masthead {
+		display: inline-block;
+		width: 100%;
+	}
+	.masthead-flag {
+		width: 68%;
+		margin-top: 8px;
+		border-top: 1px solid #E2E2E2;
+		padding-left: 25px;
+		padding-top: 6px;
+		/* Ah, the things I do for fashion... */
+		position: absolute;
+		left: 256px;
+	}
+	.name-job {
+		text-align: left;
+	}
+	.social-media li {
+		margin: 0px 9px;
+	}
+
+	.content-wrap {
+		top: 200px;
+		left: 256px;
+		position: absolute;
+		padding-left: 25px;
+		width: auto;
+	}
+}
+
+@media (min-width: 845px) {
+	.avatar-social-summary {
+		width: 256px;
+	}
+	.masthead-flag {
+		width: auto;
+	}
+}
+
+@media (min-width: 911px) {
+	.content-wrap {
+		top: 165px;
+	}
+}
+
+@media (min-width: 970px) {
+	.project-pixelsorter .pixelsorter-desc {
+		float: left;
+		width: 40%;
+	}
+	.project-pixelsorter .pixelsorter-timeline {
+		float: right;
+		width: 55%;
+	}
+}
