@@ -13,8 +13,24 @@ var server = app.listen(3000);
 var allowedOrigins = [];
 
 // Set static assets config here
-var public = path.resolve(__dirname, '../', 'public');
-app.use(express.static(public));
+var publicDir = path.resolve(__dirname, '../', 'public');
+app.use(express.static(publicDir));
+
+// Check if the file they're requesting exists. If so, let them
+// continue to default behaviors, otherwise send them back
+// to the SPA.
+app.get('*', function(req, res, next) {
+  var requestPath = path.resolve(publicDir, req.path.substring(1));
+  path.exists(requestPath, function(exists) { 
+    if (exists) { 
+      next();
+    } else {
+      res.sendFile('index.html', {
+        root: publicDir
+      });
+    }
+  }); 
+});
 
 // CORS
 app.use(function(req, res, next) {
