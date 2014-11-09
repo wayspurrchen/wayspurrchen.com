@@ -16,9 +16,7 @@ var flagLayoutMethod = function(flagMethod, args) {
 	return function() {
 		if (getCurrentLayout() == 'flag') {
 			flagMethod.apply(undefined, args);
-		}// else {
-			// longMethod.apply(undefined, args);
-		// }
+		}
 	};
 };
 
@@ -64,7 +62,7 @@ $(function() {
 
 	// Let page.js route us automatically. (By default, this is
 	// to the projects tab.)
-	page(getPath());
+	page('/' + getPath());
 
 	// If the layout has changed, show either the tabbed
 	// view for the flag layout or display everything
