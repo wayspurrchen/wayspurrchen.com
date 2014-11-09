@@ -8,7 +8,7 @@ var path = require('path');
 // API
 var api = require('./api');
 app.use(subdomain('api', api));
-var server = app.listen(3000);
+var server = app.listen(process.env.WAYSPURRCHEN_COM_PORT || 80);
 
 var allowedOrigins = [];
 
