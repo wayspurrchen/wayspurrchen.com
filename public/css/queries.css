@@ -6,9 +6,6 @@
 		margin: 0 auto;
 		width: 256px;
 	}
-	.container {
-		max-width: 420px;
-	}
 	.masthead {
 		text-align: center;
 	}
@@ -90,16 +87,10 @@
 	.title-seg.two {
 		display: inline;
 	}
-	.projects .project-body {
-		padding-left: 30px;
-	}
-	.project-frontend .reddit-post-grabber {
-		width: 90%;
-	}
 }
 
 @media (min-width: 540px) {
-	.container {
+	.job-title {
 		max-width: 520px;
 	}
 	.masthead {
@@ -114,9 +105,9 @@
 	/*.full-name {
 		margin-bottom: 0;
 	}*/
-	/*.job-title {
-		margin-top: 0;
-	}*/
+	.job-title {
+		max-width: 720px;
+	}
 	.title-seg.three {
 		display: inline;
 	}
@@ -124,8 +115,11 @@
 		font-size: 83px;
 		line-height: 59px;
 	}*/
-	.container {
-		max-width: 760px;
+	.projects .project-body {
+		padding-left: 30px;
+	}
+	.project-frontend .reddit-post-grabber {
+		width: 90%;
 	}
 }
 
@@ -183,6 +177,9 @@
 	}
 	.social-media li {
 		margin: 0px 9px;
+	}
+	.job-title {
+		max-width: none;
 	}
 
 	.content-wrap {
