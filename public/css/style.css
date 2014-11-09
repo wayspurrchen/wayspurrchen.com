@@ -29,10 +29,12 @@ a:active {
 .avatar {
 	border-radius: 7px;
 }
-/* we will show images when the scroller is ready
-   - otherwise, just show the first one */
 .avatar img {
+	max-width: 100%;
+	width: 100%;
 	display: none;
+	/* we will show images when the scroller is ready
+	   - otherwise, just show the first one */
 }
 .avatar img.primary {
 	display: block;
