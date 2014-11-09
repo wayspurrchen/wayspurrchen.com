@@ -261,11 +261,7 @@ a:active {
 	font-weight: 700;
 }
 .resume .position-title {
-	float: left;
 	margin-bottom: 6px;
-}
-.resume .position-date {
-	float: right;
 }
 .resume .resume-link {
 	margin-top: 20px;
@@ -297,9 +293,6 @@ a:active {
 	width: 24px;
 	height: 24px;
 	background-image: url('/images/wl.png');
-}
-.resume .mica {
-	padding-left: 88px;
 }
 .resume .mica:before {
 	top: 2px;
