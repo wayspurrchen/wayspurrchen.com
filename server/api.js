@@ -3,14 +3,7 @@ var request = require('request');
 
 var router = express.Router();
 router.get('/', function(req, res) {
-  console.log(req);
-  res.send('Welcome to our API!');
-});
-router.get('/users', function(req, res) {
-  console.log(req);
-  res.json([
-    { name: "Brian" }
-  ]);
+  res.send('This is the API for wayspurrchen.com. Nothing to do from here.');
 });
 router.get('/medium', function(req, res, next) {
   console.log(req);

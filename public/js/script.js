@@ -1,3 +1,4 @@
+
 var getCurrentLayout = function() {
 	if (document.documentElement.clientWidth > 800) {
 		return 'flag';
@@ -11,13 +12,13 @@ var currentLayout = getCurrentLayout();
 
 // Run the first or second method, depending on which
 // layout we're on.
-var routeLayoutMethod = function(flagMethod, longMethod, args) {
+var flagLayoutMethod = function(flagMethod, args) {
 	return function() {
 		if (getCurrentLayout() == 'flag') {
 			flagMethod.apply(undefined, args);
-		} else {
-			longMethod.apply(undefined, args);
-		}
+		}// else {
+			// longMethod.apply(undefined, args);
+		// }
 	};
 };
 
@@ -35,25 +36,13 @@ var showForLong = function() {
 	$('.js-tab-contents').show();
 };
 
-var projectsFlagView = function() {
-	console.log('show projects flagview');
-};
-var projectsLongView = function() {
-	console.log('show projects longview');
-};
-var cvFlagView = function() {
-	console.log('show cv flagview');
-};
-var cvLongView = function() {
-	console.log('show cv longview');
-};
+page('/', flagLayoutMethod(showTab, ['projects']));
+page('/projects', flagLayoutMethod(showTab, ['projects']));
+page('/resume', flagLayoutMethod(showTab, ['resume']));
+// page('/cv', flagLayoutMethod(showTab, ['cv']));
 
-page('/', routeLayoutMethod(showTab, projectsLongView, ['projects']));
-page('/projects', routeLayoutMethod(showTab, projectsLongView, ['projects']));
-page('/cv', routeLayoutMethod(showTab, cvLongView, ['cv']));
-
-// Navigate to routes on click
-$('.tab-links a').on('click', function(e) {
+// Navigate to routes on click/touch
+$('.tab-links a').on('click touch', function(e) {
 	e.preventDefault();
 	page($(this).attr('href'));
 });
@@ -64,6 +53,13 @@ function getPath() {
 
 // We landed!
 $(function() {
+	// Initialize our silly photo scroller thing
+	photoScroller($('#scroller'), [
+		'/images/professor.jpg',
+		'/images/teaching.jpg',
+		'/images/wideeyed.jpg'
+	], 15000);
+
 	// If our path is anything but just the root,
 	// let Page.js take over.
 	var path = getPath();
@@ -80,7 +76,7 @@ $(function() {
 			currentLayout = newLayout;
 			var path = getPath();
 			if (currentLayout == 'flag') {
-				showTab(path);
+				showTab(path || 'projects');
 			} else {
 				showForLong();
 			}

@@ -32,7 +32,9 @@
 			</div>
 			<div class="avatar-social-summary clearfix">
 				<div class="avatar-social clearfix">
-					<img class="avatar" src="/images/avatar.jpeg">
+					<div id="scroller" class="avatar">
+						<img class="primary" src="/images/avatar.jpeg">
+					</div>
 					<ul class="social-media">
 						<li><a href="http://github.com/wayspurrchen"><i class="fa fa-github-square"></i></a></li>
 						<li><a href="http://twitter.com/wayspurrchen"><i class="fa fa-twitter-square"></i></a></li>
@@ -40,21 +42,26 @@
 						<li><a href="https://www.linkedin.com/profile/view?id=220884840"><i class="fa fa-linkedin-square"></i></a></li>
 					</ul>
 				</div>
-				<!-- <a href="/resume.pdf" class="resume">Resume</a> -->
-				<p class="summary">
-					I'm a web developer, autodidact, blah blah blah blah blah blah blahlblahl blah blah.
-				</p>
+				<div class="summary">
+					<p>
+						I've been making things on the web since I had a dial-up connection. I'm a self-taught front-end web developer
+						with a love of performant, beautiful, and usable web applications.
+					</p>
+					<p>
+						You can email me with questions, feedback, or work inquiries at <a href="mailto:wayspurrchen@gmail.com">wayspurrchen@gmail.com</a>.
+					</p>
+				</div>
 			</div>
 		</div>
 		<div class="content-wrap clearfix">
 			<main class="content">
 				<ul class="long-layout-hide tab-links js-tab-links">
 					<li data-tab="projects" class="active"><a href="/projects">Projects</a></li>
-					<li data-tab="cv"><a href="/cv">Curriculum Vitae</a></li>
+					<li data-tab="resume"><a href="/resume">Resume</a></li>
 				</ul>
 				<div data-tab="projects" class="js-tab-contents projects">
 					<h2 id="projects-title" class="flag-layout-hide">Projects</h2>
-					<div class="project-section project-frontend">
+					<div class="project-section project-frontend clearfix">
 						<h3 class="project-title"><a href="http://reddit.com/r/frontend">/r/frontend</a> - a community for front-end developers</h3>
 						<div class="project-body">
 							<p>Started in November 2014, /r/frontend is a subreddit I created for front end web developers who want to move the web forward or want to learn how.
@@ -68,7 +75,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="project-section project-pixelsorter">
+					<div class="project-section project-pixelsorter clearfix">
 						<h3 class="project-title"><a href="http://twitter.com/pixelsorter">@pixelsorter</a> - an image-processing Twitter bot</h3>
 						<div class="project-body">
 							<div class="pixelsorter-desc">
@@ -84,26 +91,106 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="project-section project-pixelsorter">
-						<h3 class="project-title"><a href="http://twitter.com/pixelsorter">@pixelsorter</a> - an image-processing Twitter bot</h3>
+					<div class="project-section project-automata clearfix">
+						<h3 class="project-title"><a href="http://www.automata.website">Automata</a> - cellular automata simulation</h3>
 						<div class="project-body">
-							<div class="pixelsorter-desc">
-								<p><a href="http://twitter.com/pixelsorter">@pixelsorter</a> is a Twitter bot written in Ruby heavily utilizing
-								<a href="https://github.com/EVA-01/pxlsrt">EVA-01/pxlsrt</a> and <a href="https://github.com/mispy/twitter_ebooks">mispy/twitter_ebooks</a>.
-								It sorts the rows (or optionally columns) of an image according to a specific method like hue, red, brightness, luma, etc. Simply attach an image
-								to your tweet (links to images currently not supported) and mention @pixelsorter. @pixelsorter will respond with an image that
-								has been processed using one of a numer of random presets. <strong><a href="/pixelsorter">Read detailed information on how to use it here</a>.</strong></p>
-							</div>
-							<div class="pixelsorter-timeline">
-								<a class="twitter-timeline" href="https://twitter.com/pixelsorter" data-widget-id="530956857167192064" height="400">Tweets by @pixelsorter</a>
-								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							<div class="automata-desc">
+								<img src="/images/automata.gif">
+								<p>Modeled after Conway's <a href="http://pmav.eu/stuff/javascript-game-of-life-v3.1.1/">Game of Life</a>, <strong>Automata</strong> is a small simulation,
+								near-zero-player game where simulated broods of cellular automata fight each other for control of a grid. Players can influence the outcome of the game
+								by clicking on the grid to place new cells.</p>
 							</div>
 						</div>
-					</div> -->
+					</div>
 				</div>
-				<div data-tab="cv" class="js-tab-contents cv">
-					<h2 id="cv-title" class="flag-layout-hide">Curriculum Vitae</h2>
+				<div data-tab="resume" class="js-tab-contents resume">
+					<h2 id="resume-title" class="flag-layout-hide">Resume</h2>
+					<p class="resume-link"><a href="/files/resume.pdf">Click here</a> for a PDF version (2 pages).</p>
+					<h3>Experience</h3>
+					<div class="position-title-container clearfix">
+						<p class="position-title">
+							Lead Instructor<br />
+							<span class="icon mks">MakerSquare</span></p>
+						<span class="position-date">(May 2014 - Current)</span>
+					</div>
+					<p>
+						Managed, coordinated, and oversaw events, instruction, and curriculum for a 12-week intensive web-development program. Assisted and led strategic product and company
+						decisions, instructed and developed curriculum on front-end topics and represented MakerSquare brand in business contexts.
+					</p>
+					<div class="position-title-container clearfix">
+						<p class="position-title">
+							Volunteer Mentor<br />
+							<span class="icon mks">MakerSquare</span>
+						</p>
+						<span class="position-date">(October 2013 - May 2014)</span>
+					</div>
+					<p>
+						Mentored front-end focused students at MakerSquare on various frameworks, core JavaScript/programming concepts, basic RBDMS concepts, and career advice.
+					</p>
+					<div class="position-title-container clearfix">
+						<p class="position-title">
+							Lead Front-End Developer<br />
+							<span class="icon wl">White Lion Interactive</span>
+						</p>
+						<span class="position-date">(February 2014 - May 2014)</span>
+					</div>
+					<p>
+						Assumed more responsibilities in addition to development work including training and mentoring junior developers, oversight and consultation on multiple projects,
+						organizing changes in internal processes, and recruiting/hiring outreach.
+					</p>
+					<div class="position-title-container clearfix">
+						<p class="position-title">
+							Front-End Developer<br />
+							<span class="icon wl">White Lion Interactive</span>
+						</p>
+						<span class="position-date">(May 2013 - February 2014)</span>
+					</div>
+					<p>
+						Worked in an agency environment on the front end in a wide array of custom small-to- large size projects using Laravel 4, HTML5, CSS3, and JavaScript. JavaScript
+						work extended into operations work utilizing Node, Grunt, RequireJS, and Bower as build/dependency management tools, as well as frameworks like Backbone, AngularJS, Modernizr, and more.
+					</p>
+					<div class="position-title-container clearfix">
+						<p class="position-title">Freelance Web Design and Development</p>
+						<span class="position-date">(May 2012 - May 2013)</span>
+					</div>
+					<p>
+						Worked and working with various clients through Freelancer.com, Elance, and word of mouth to perform anything from minor alterations to entire site redesigns.
+					</p>
+					<div class="position-title-container clearfix">
+						<p class="position-title">
+							A/V Help Desk Workstudy<br />
+							<span class="icon mica">Maryland Institute College of Art</span>
+						</p>
+						<span class="position-date">(September 2009 - May 2012)</span>
+					</div>
+					<p>
+						Responsible for instructing customers on the usage of equipment, administering fines, checking out equipment, as well as delivery, setup, and collection of equipment around campus.
+					</p>
+					<h3>Skills</h3>
+					<ul>
+						<li><strong>HTML5</strong> - Semantic, performant, cross-browser compatible websites, modern HTML5 APIs, progressive enhancement/graceful degradation, experience building WAI-ARIA / 508-compliant applications</li>
+						<li><strong>CSS and UX</strong> - Sass, modular CSS paradigms (SMACSS/OOCSS/BEM), grid-systems (Foundation and Bootstrap), responsive design, mobile optimization</li>
+						<li><strong>JavaScript</strong> - Deep familiarity with front-end JavaScript, comfortable with Node.js, experience building modular code for JavaScript applications, SPAs, and a wide array of libraries and frameworks, event-driven/asynchronous programming</li>
+						<li><strong>Libraries</strong> - jQuery, Underscore / lodash, and a vast number of others</li>
+						<li><strong>Frameworks</strong> - Backbone.js, Angular.js 1.3, Raphael.js, Ext.js + Sencha Touch</li>
+						<li><strong>Modern front-end tooling</strong> - Require.js, Modernizr + polyfills, NPM, Bower, Grunt and Gulp, Yeoman generators, Raphael.js (SVG) and Kinetic.js (Canvas), A+/Promises (q and native Chrome promises), Phantom.js, D3, Socket.io</li>
+						<li><strong>Backend Languages and experience</strong> - Comfortable with PHP + Laravel, Ruby + Ruby on Rails / Sinatra, and have worked briefly with Java and Python, familiar with RDBMS technologies MySQL, Postgres, and NoSQL platform MongoDB</li>
+						<li><strong>Excellent written and oral skills</strong> - Skilled at conveying complex topics to team members, writing technical documentation, or drafting friendly emails.</li>
+						<li><strong>Client-facing communication</strong> - Able to communicate with clients comfortably and explain technical concepts in a nontechnical way.</li>
+						<li><strong>Management and team leadership</strong> - Experience managing product direction, projects, and conducting 1-on-1s with multiple team members. Focused on workplace happiness, creative spaces and collaborative environments.</li>
+						<li>
+							<strong>General technical skills:</strong>
+							<ul>
+								<li>Project management / bug tracking: JIRA, Basecamp, Asana</li>
+								<li>Version Control: SVN &amp; Git</li>
+								<li>Adobe Creative Suite: Photoshop, Premiere Pro, some Illustrator</li>
+								<li>Familiar with Agile/Scrum methodologies</li>
+								<li>A/V skills (I can set up your projector)</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
+				<footer class="content-footer">You've reached the end. <a class="back-to-top" href="#">Back to top?</a></footer>
 			</main>
 		</div>
 	</div>
@@ -129,6 +216,7 @@
 	<script src="/js/vendor/underscore.min.js"></script>
 	<script src="/js/vendor/page.js"></script>
 	<script src="/js/vendor/jquery-2.1.1.min.js"></script>
+	<script src="/js/scroller.js"></script>
 	<script src="/js/script.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

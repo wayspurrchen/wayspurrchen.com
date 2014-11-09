@@ -26,8 +26,32 @@ a:active {
 .masthead {
 	position: relative;
 }
-.masthead img {
+.avatar {
 	border-radius: 7px;
+}
+/* we will show images when the scroller is ready
+   - otherwise, just show the first one */
+.avatar img {
+	display: none;
+}
+.avatar img.primary {
+	display: block;
+}
+.avatar-scroll-button {
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.3;
+	display: block;
+	z-index: 2;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.avatar-scroll-button:hover {
+	opacity: 0.6;
 }
 .name-job {
 	text-transform: uppercase;
@@ -92,16 +116,6 @@ a:active {
 .content h2,
 .content h3 {
 	font-weight: 700;
-}
-
-/* NAVBAR */
-
-.resume {
-	border-radius: 5px;
-	border: 1px solid #000;
-	display: block;
-	font-size: 24px;
-	text-transform: uppercase;
 }
 
 /* SOCIAL MEDIA ICONS */
@@ -178,7 +192,6 @@ a:active {
 	top: 6px;
 	width: 24px;
 	height: 24px;
-	background-image: url('/images/reddit.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -227,4 +240,94 @@ a:active {
 .project-pixelsorter .project-title:before {
 	top: 10px;
 	background-image: url('/images/twitter.png');
+}
+
+.project-automata .project-title:before {
+	background-image: url('/images/automata.png');	
+}
+.project-automata img {
+	float: left;
+	margin-right: 20px;
+}
+.project-automata img {
+	float: left;
+	margin-right: 20px;
+}
+
+/* RESUME */
+.resume .position-title,
+.resume .position-date {
+	color: #4D4D4D;
+	font-size: 18px;
+	font-weight: 700;
+}
+.resume .position-title {
+	float: left;
+	margin-bottom: 6px;
+}
+.resume .position-date {
+	float: right;
+}
+.resume .resume-link {
+	margin-top: 20px;
+}
+.resume .icon {
+	position: relative;
+}
+.resume .icon:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.resume .mks {
+	padding-left: 28px;
+}
+.resume .mks:before {
+	top: 3px;
+	width: 22px;
+	height: 25px;
+	background-image: url('/images/mks.jpg');
+}
+.resume .wl {
+	padding-left: 32px;
+}
+.resume .wl:before {
+	top: 1px;
+	width: 24px;
+	height: 24px;
+	background-image: url('/images/wl.png');
+}
+.resume .mica {
+	padding-left: 88px;
+}
+.resume .mica:before {
+	top: 2px;
+	width: 76px;
+	height: 24px;
+	background-image: url('/images/mica.png');
+}
+.resume h3 {
+	text-transform: uppercase;
+}
+.resume h4 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+/* FOOTER */
+.content-footer {
+	color: #bbb;
+	font-size: 12px;
+	text-align: center;
+	margin: 30px 0 20px;
+}
+.content-footer .back-to-top {
+	color: #fff;
+	background-color: #5AA9FF;
+	border: 1px solid #5AA9FF;
+	border-radius: 5px;
+	margin-left: 3px;
+	padding: 4px 8px;
 }

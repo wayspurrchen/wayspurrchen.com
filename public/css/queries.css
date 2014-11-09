@@ -2,6 +2,10 @@
 	.long-layout-hide {
 		display: none;
 	}
+	.avatar {
+		margin: 0 auto;
+		width: 256px;
+	}
 	.container {
 		max-width: 260px;
 	}
