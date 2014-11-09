@@ -1,0 +1,3 @@
+[submodule "public/pixelsorter"]
+	path = public/pixelsorter
+	url = https://github.com/wayspurrchen/pixelsorter-site
