@@ -7,7 +7,7 @@
 		width: 256px;
 	}
 	.container {
-		max-width: 260px;
+		max-width: 420px;
 	}
 	.masthead {
 		text-align: center;
@@ -27,6 +27,9 @@
 	}
 	.job-title {
 		font-size: 20px;
+		max-width: 256px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.summary {
 		font-size: 18px;
@@ -61,9 +64,6 @@
 	.container {
 		max-width: none;
 	}
-	.avatar-social-summary {
-
-	}
 	.full-name {
 		height: auto;
 	}
@@ -76,6 +76,7 @@
 	}
 	.job-title {
 		font-size: 24px;
+		max-width: none;
 	}
 }
 
@@ -88,6 +89,12 @@
 @media (min-width: 534px) {
 	.title-seg.two {
 		display: inline;
+	}
+	.projects .project-body {
+		padding-left: 30px;
+	}
+	.project-frontend .reddit-post-grabber {
+		width: 90%;
 	}
 }
 

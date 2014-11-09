@@ -174,9 +174,6 @@ a:active {
 }
 
 /* PROJECTS */
-.projects .project-body {
-	padding-left: 30px;
-}
 .project-section {
 	margin-bottom: 20px;
 }
@@ -199,7 +196,6 @@ a:active {
 	background-image: url('/images/reddit.png');
 }
 .project-frontend .reddit-post-grabber {
-	width: 90%;
 	padding: 10px 20px 10px 20px;
 	border: 1px solid #E5E5E5;
 }
@@ -243,6 +239,7 @@ a:active {
 }
 
 .project-automata .project-title:before {
+	top: 3px;
 	background-image: url('/images/automata.png');	
 }
 .project-automata img {
