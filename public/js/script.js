@@ -24,7 +24,6 @@ var flagLayoutMethod = function(flagMethod, args) {
 
 // Show an individual content tab.
 var showTab = function(tab) {
-	console.log('showing tab', tab);
 	$('.js-tab-links li').removeClass('active');
 	$('.js-tab-links li[data-tab="' + tab + '"]').addClass('active');
 	$('.js-tab-contents').hide();
@@ -39,7 +38,10 @@ var showForLong = function() {
 page('/', flagLayoutMethod(showTab, ['projects']));
 page('/projects', flagLayoutMethod(showTab, ['projects']));
 page('/resume', flagLayoutMethod(showTab, ['resume']));
-// page('/cv', flagLayoutMethod(showTab, ['cv']));
+// Catchall
+page('*', function() {
+	page('/');
+});
 
 // Navigate to routes on click/touch
 $('.tab-links a').on('click touch', function(e) {
@@ -60,12 +62,9 @@ $(function() {
 		'/images/wideeyed.jpg'
 	], 15000);
 
-	// If our path is anything but just the root,
-	// let Page.js take over.
-	var path = getPath();
-	if (path) {
-		page('/' + path);
-	}
+	// Let page.js route us automatically. (By default, this is
+	// to the projects tab.)
+	page(getPath());
 
 	// If the layout has changed, show either the tabbed
 	// view for the flag layout or display everything
@@ -89,7 +88,6 @@ $.ajax({
 	url: 'http://www.reddit.com/r/frontend/top.json?t=week',
 	success: function(res) {
 		var redditPosts = res.data.children.slice(0, 5);
-		console.log(redditPosts);
 		var tmpl = _.template($('#r-frontend-listing').html());
 		var compiled = tmpl({
 			threads: redditPosts
