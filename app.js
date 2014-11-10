@@ -6,7 +6,7 @@ var queryString = require('query-string');
 var path = require('path');
 
 // API
-var api = require('./api');
+var api = require('./server/api');
 app.use(subdomain('api', api));
 var server = app.listen(process.env.WAYSPURRCHEN_COM_PORT || 80);
 
