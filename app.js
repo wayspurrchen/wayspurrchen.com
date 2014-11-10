@@ -13,7 +13,7 @@ var server = app.listen(process.env.WAYSPURRCHEN_COM_PORT || 80);
 var allowedOrigins = [];
 
 // Set static assets config here
-var publicDir = path.resolve(__dirname, '../', 'public');
+var publicDir = path.resolve(__dirname, 'public');
 app.use(express.static(publicDir));
 
 // Check if the file they're requesting exists. If so, let them
