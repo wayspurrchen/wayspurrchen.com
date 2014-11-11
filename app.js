@@ -3,16 +3,17 @@ var app = express();
 var request = require('request');
 var queryString = require('query-string');
 var path = require('path');
-app.listen(process.env.WAYSPURRCHEN_COM_PORT || 80);
 
 // API
 var api = require('./server/api');
+app.use('/api', api);
+app.listen(process.env.WAYSPURRCHEN_COM_PORT || 80);
+
 var allowedOrigins = [];
 
 // Set static assets config here
 var publicDir = path.resolve(__dirname, 'public');
 app.use(express.static(publicDir));
-app.use('/api', api);
 
 // Check if the file they're requesting exists. If so, let them
 // continue to default behaviors, otherwise send them back
