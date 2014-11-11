@@ -86,10 +86,22 @@ $.ajax({
 	url: 'http://www.reddit.com/r/frontend/top.json?t=week',
 	success: function(res) {
 		var redditPosts = res.data.children.slice(0, 5);
-		var tmpl = _.template($('#r-frontend-listing').html());
+		var tmpl = _.template($('#r-frontend-listing-template').html());
 		var compiled = tmpl({
 			threads: redditPosts
 		});
 		$('#r-frontend-posts').empty().append($(compiled));
 	}
 })
+
+// Grab 5 latest blog posts
+$.ajax({
+	url: '/api/blogfeed',
+	success: function(data) {
+		var tmpl = _.template($('#blog-post-listing-template').html());
+		var compiled = tmpl({
+			posts: data
+		});
+		$('#blog-posts').empty().append($(compiled));
+	}
+});

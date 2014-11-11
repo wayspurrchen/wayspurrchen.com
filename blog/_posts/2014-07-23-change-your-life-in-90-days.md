@@ -1,0 +1,31 @@
+---
+layout: post
+title:  Change Your Life in 90 Days
+date:   2014-07-23 19:53:00
+category: post
+---
+
+When I first interviewed for the job at MakerSquare, I had a fairly good idea of what to expect. I had been a mentor for the previous three months and worked with a variety of students, and even hired two of them for the company I was working for. I was exposed to the MakerSquare education, mentality, and spirit, and I was very excited. I show up, lecture, explain programming concepts, give assignments, and write curriculum, right? Sure, that's part of the job.
+
+<!-- more -->
+
+Programming boot camps are not a foreign concept in the tech industry anymore. When MakerSquare first started, there were about 7 schools. Roughly 18 months later, there are over 50, and more are appearing. It's an incredibly alluring idea: "boot camp" yourself for 6/9/10/12/however many weeks, become a Ruby/Python/JavaScript/iOS ninja, get your six-figure salary, and ride off into the cyber sunset. Unfortunately, this is very unlikely unless you happen to have prior development experience or live in a very large tech bubble.
+
+For people with little to no prior experience at MakerSquare, the experience is more like this: you put in three very long, challenging, but rewarding and engaging months and you come out of a program knowing how to think about programming, problem-solving, and new technologies well enough to fill a junior web development position on the back-end or the front-end and with the fundamental knowledge to teach yourself everything else you need to know. To be colloquial, MakerSquare graduates come flying out of the program with web applications, resumes, online presences, and experience working on web applications with a solid understanding of essential SOLID software design (pun unintended).
+
+That's, of course, what we put on our website. It's true, but there's also a lot more to it.
+
+<div class="center">
+	<img src="http://3daystartup.files.wordpress.com/2013/12/1402171_579967452058923_692858368_o.jpg?w=594&amp;h=444" />
+	<p>MakerSquare's 2nd graduating cohort in 2013</p>
+</div>
+
+What I didn't realize going in was just how emotional the experience can be for students. Before entering the program, prospective students have approximately 120-150 hours of prework to do to catch them up to speed as necessary. Once in the program, students are in class for 8 hours a day (9-5pm with lunch) for straight 12 weeks, alternating between lectures, exercises, homework assignments, extensions to those homework assignments, and then more resources than they could possibly consume in all of that time. They frequently stay after class until 7, 8, 9, 10 o'clock at night, after instructors have left, and work together after class and over the weekend. They take in an absolutely overwhelming amount of information and knowledge. I've heard from many students that it's the most difficult thing they've ever done.
+
+I've also heard from many students that they didn't expect how profoundly it would affect them, how emotional the entire process would be. Learning so much at such a rapid pace affects students. I get to see students at their breaking point. I've had many students on the verge of tears, or sending me worried emails and IMs. It's an intense experience that I don't think can be mirrored by many other environments. It's more aggressive than college, more fast-paced, and you have no one but yourself and your peers to compare yourself against. After all, programming is difficult; you end up with failure after failure after failure. That's literally how we make things work, and also how any creative process works. For students who aren't familiar with or don't expect the experience, it can be defeating.
+
+That's why my job as an instructor is so important to me, and so rewarding. It's not just a job for a client who really wants a button to "pop" or wants to increase their conversion rates by X%--my success is the success of my students. I'm not sending a bunch of students off to a college, or pushing them through a lecture hall and hoping they succeed in an abstract world far removed from my campus. They've joined the MakerSquare immersive program because they want to change their careers, and ultimately their lives. They've put their lives on hold for three straight months, often in order to learn an entirely new skill, or drastically improve an old one. The quality of my instruction and the care I give to my students directly relates to their success in their careers. I can't help but be conscious of this: what I and the other instructors teach them is that with which they go out into the world. Every instructor in an immersive course should be aware of this. Students can't be just commodities; they're people whose success or failure reflects on you and your efforts as an instructor.
+
+Luckily, we have an advantage. The students that we accept into our program are smart, friendly, and driven. With time, practice, and instruction, students rise above all of these challenges and figure out how to make things work. I've seen those same students glow with happiness (victoriousness, even) after building projects they never imagined they would be able to when they entered the program. I've seen the most worried students have "A-ha!" moments in front of me after solving a complex problem. I've seen newly graduated students enter the job market with a set of projects <em>they</em> built and newly found sense of confidence. These students become my friends and family, and if they keep learning, soon they become my peers, too. On top of this, I get to help them and continue to hear more about their successes (and their failures!) as time goes on, in all the jobs and projects they work on.
+
+It's hard to imagine another job I would enjoy or feel more passionate about. MakerSquare is always improving, but we're already doing so many things that feel incredibly right. Ultimately, I love that I have the chance to care about and affect the success of the people coming through this program. I get to work with some of the brightest people in Austin. When you stop to think about it, we really are changing people's lives in 90 days--and I think that's pretty amazing.

@@ -1,0 +1,15 @@
+# Site settings
+title: wayspurrchen/blog
+email: wayspurrchen@gmail.com
+description: "The blog."
+baseurl: "/blog"
+url: "http://wayspurrchen.com"
+twitter_username: wayspurrchen
+github_username:  wayspurrchen
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+destination: ../public/blog
+source: .
+excerpt_separator: <!-- more -->

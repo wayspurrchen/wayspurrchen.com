@@ -51,6 +51,9 @@
 						You can email me with questions, feedback, or work inquiries at <a href="mailto:wayspurrchen@gmail.com">wayspurrchen@gmail.com</a>.
 					</p>
 				</div>
+				<h3 class="blog-posts-title">Latest Blog Posts</h3>
+				<div id="blog-posts" class="blog-posts">
+				</div>
 			</div>
 		</div>
 		<div class="content-wrap clearfix">
@@ -202,7 +205,7 @@
 			</main>
 		</div>
 	</div>
-	<script type="text/template" id="r-frontend-listing">
+	<script type="text/template" id="r-frontend-listing-template">
 		<ul>
 			<% for (var i = 0; i < threads.length; i++) { %>
 				<li>
@@ -217,6 +220,16 @@
 					<span class="reddit-author">
 						by <a href="http://www.reddit.com/u/<%= threads[i].data.author %>"><%= threads[i].data.author %></a>
 					</span>
+				</li>
+			<% } %>
+		</ul>
+	</script>
+	<script type="text/template" id="blog-post-listing-template">
+		<ul>
+			<% for (var i = 0; i < posts.length; i++) { %>
+				<li>
+					<a href="<%= posts[i].link %>"><%= posts[i].title %></a>
+					<span class="blog-date"><%= posts[i].date %></span>
 				</li>
 			<% } %>
 		</ul>

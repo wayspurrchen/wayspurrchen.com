@@ -1,4 +1,3 @@
-var subdomain = require('express-subdomain');
 var express = require('express');
 var app = express();
 var request = require('request');
@@ -7,7 +6,7 @@ var path = require('path');
 
 // API
 var api = require('./server/api');
-app.use(subdomain('api', api));
+app.use('/api', api);
 var server = app.listen(process.env.WAYSPURRCHEN_COM_PORT || 80);
 
 var allowedOrigins = [];
