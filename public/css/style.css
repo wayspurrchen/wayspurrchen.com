@@ -146,10 +146,12 @@ a:active {
 .fa-github-square {
 	color: #000;
 }
-.fa-twitter-square {
+.fa-twitter-square,
+.fa-twitter {
 	color: #00aced;
 }
-.fa-tumblr-square {
+.fa-tumblr-square,
+.fa-tumblr {
 	color: #32506d;
 }
 .fa-linkedin-square {
@@ -250,13 +252,14 @@ a:active {
 	color: #369;
 }
 
-.project-pixelsorter .project-title:before {
-	top: 10px;
-	background-image: url('/images/twitter.png');
+.project-section .project-title i {
+	position: absolute;
+	left: 0;
+	top: 5px;
 }
 
 .project-automata .project-title:before {
-	top: 3px;
+	top: 6px;
 	background-image: url('/images/automata.png');	
 }
 .project-automata img {
@@ -267,6 +270,8 @@ a:active {
 	float: left;
 	margin-right: 20px;
 }
+
+
 
 /* RESUME */
 .resume .position-title,
