@@ -36,6 +36,7 @@ var showForLong = function() {
 page('/', flagLayoutMethod(showTab, ['projects']));
 page('/projects', flagLayoutMethod(showTab, ['projects']));
 page('/resume', flagLayoutMethod(showTab, ['resume']));
+page('/links', flagLayoutMethod(showTab, ['links']));
 // Catchall
 page('*', function() {
 	page('/');
