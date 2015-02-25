@@ -57,6 +57,7 @@ Theophrastus, the first personality psychologist, scribbled personalities down a
 - \- Conventional, concrete, traditional, preferring the known to the unknown
 
 Facets:
+
 - Imagination: High scorers tend to engage in fantasy to create a more interesting world.
 - Artistic Interests: High scorers appreciate beauty in art and nature and are involved and absorbed in aesthetics.
 - Emotionality: High scorers tend to have good access to and awareness of their feelings.
@@ -70,6 +71,7 @@ Facets:
 - \- Disorganized, late, careless, impulsive
 
 Facets:
+
 - Self-Efficacy: High scorers believe they have the intelligence, drive, and self--control necessary for achieving success.
 - Orderliness: High scorers are well-organized people who like to live according to routines and schedules; they keep lists and make plans.
 - Dutifulness: High scorers tend to have a strong sense of moral obligation.
@@ -82,6 +84,7 @@ Facets:
 - \- Reserved, quiet, shy
 
 Facets:
+
 - Friendliness: High scorers genuinely like other people and openly demonstrate positive feelings toward others; they make friends quickly and it is easy for them to form close, intimate relationships.
 - Gregariousness: High scorers find the company of others pleasantly stimulating and rewarding; they enjoy the excitement of crowds.
 - Assertiveness: High scorers like to speak out, take charge, and direct the activities of others.
@@ -94,6 +97,7 @@ Facets:
 - \- Fault finding, quarrelsome, critical, harsh, aloof, blunt
 
 Facets:
+
 - Trust: High scorers assume that most people are fair, honest, and have good intentions.
 - Morality: High scorers see no need for pretense or manipulation when dealing with others; they are candid, frank, and sincere.
 - Altruism: High scorers find that doing things for others is a form of self-fulfillment rather than self-sacrifice.
@@ -105,7 +109,6 @@ Facets:
 
 - \+ Anxious, easily ruffled or upset, worried, moody
 - \- Calm, relaxed, able to handle stress well, emotionally stable
-Facets:
 
 Facets:
 - Anxiety: High scorers often feel as if something dangerous were about to happen; they tend to feel tense, jittery, and nervous.
@@ -118,6 +121,7 @@ Facets:
 You can construct personality types quickly by mixing and matching two big 5 attributes at a time. Beware that people are mostly a blend but it can be useful. (This would be a total of 20 combinations, which is easily memorizable.)
 
 EXAMPLE - on a cross of agreeableness vs neuroticism:
+
 - -neuroticism / -agreeableness -> unemotional
 - -neuroticism / +agreeableness -> easygoing, optimistic
 - +neuroticism / +agreeableness -> sensitive, sentimental
