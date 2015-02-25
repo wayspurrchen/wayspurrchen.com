@@ -111,6 +111,7 @@ Facets:
 - \- Calm, relaxed, able to handle stress well, emotionally stable
 
 Facets:
+
 - Anxiety: High scorers often feel as if something dangerous were about to happen; they tend to feel tense, jittery, and nervous.
 - Anger: High scorers are inclined to feel angry; they are sensitive about being treated fairly and feel resentful and bitter when they feel they are being cheated.
 - Depression: High scorers tend to feel sad, dejected, and discouraged; they lack energy and have difficulty initiating activities.
