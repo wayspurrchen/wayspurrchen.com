@@ -28,7 +28,7 @@ app.get('*', function(req, res, next) {
         root: publicDir
       });
     }
-  }); 
+  });
 });
 
 // CORS
