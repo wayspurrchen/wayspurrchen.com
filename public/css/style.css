@@ -211,6 +211,9 @@ a:active {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+.project-glitchet .project-title:before {
+	background-image: url('/images/glitchet.jpg');
+}
 .project-frontend .project-title:before {
 	background-image: url('/images/reddit.png');
 }
