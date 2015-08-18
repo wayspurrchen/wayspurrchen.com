@@ -15,6 +15,11 @@ var allowedOrigins = [];
 var publicDir = path.resolve(__dirname, 'public');
 app.use(express.static(publicDir));
 
+// Annex redirect
+app.get( '/pixelsorter', function (req, res, next) {
+  res.redirect( 301, 'http://www.glitchet.com/pixelsorter' );
+} );
+
 // Check if the file they're requesting exists. If so, let them
 // continue to default behaviors, otherwise send them back
 // to the SPA.
