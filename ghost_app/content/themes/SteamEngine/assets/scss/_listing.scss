@@ -9,9 +9,7 @@
 		font-weight: 400;
 	}
 
-	margin: 20px auto;
-	max-width: $site-width-constraint;
-	width: 90%;
+	@include width-constraint;
 
 	&.has-featured-image {
 		.post-excerpt {

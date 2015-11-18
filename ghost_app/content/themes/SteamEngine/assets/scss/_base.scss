@@ -1,3 +1,7 @@
+// Global settings
+$site-width-constraint: 700px;
+$popout-min: 940px;
+
 /* === Core Styles === */
 body {
   background-color: #ffffff;
@@ -28,8 +32,16 @@ h1 {
   padding: 0;
 }
 
-// Global settings
-$site-width-constraint: 700px;
+
+@mixin width-constraint($width: $site-width-constraint) {
+  margin: 20px auto;
+  max-width: $width;
+  width: 90%;
+}
+
+.constrain {
+  @include width-constraint;
+}
 
 a.archive-link,
 .article-nav {
@@ -109,14 +121,6 @@ blockquote {
   padding-right: 1.5em;
   padding-left: 1em;
 }
-.post-meta {
-  color: #95a5a6;
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  margin-top: 0.3em;
-  text-transform: uppercase;
-}
 .tags {
   font-size: 16px;
   margin-bottom: 0.5em;
@@ -131,17 +135,12 @@ div.authorimage {
   margin-right: 17px;
   float: left;
 }
-h1.post-title {
-  margin-top: 35px;
-}
-h1.post-title a,
+
 h1.blog-title a {
   color: #151515;
   transition: color ease 0.7s;
   -webkit-transition: color ease 0.7s;
 }
-h1.post-title a:focus,
-h1.post-title a:hover,
 h1.blog-title a:focus,
 h1.blog-title a:hover {
   /*color: #178b6b;*/

@@ -1,3 +1,65 @@
+.post-title {
+  margin-top: 35px;
+  a {
+    color: #151515;
+    transition: color ease 0.7s;
+    -webkit-transition: color ease 0.7s;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.post-meta {
+  @include width-constraint;
+  color: #95a5a6;
+  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 0.3em;
+  text-transform: uppercase;
+}
+
+.post {
+  // Standard <p> elements are constrained.
+  p, h1, h2, h3, h4, h5, h6, ul {
+    @include width-constraint;
+  }
+
+
+  .image-embed {
+    $margin: 20px;
+    $popout-amount: -100px;
+
+    &.left {
+      float: left;
+      margin-right: $margin;
+    }
+    &.right {
+      float: right;
+      margin-left: $margin;
+    }
+
+    @media (min-width: 900px) {
+      &.popout.left {
+        margin-left: $popout-amount;
+      }
+      &.popout.right {
+        margin-right: $popout-amount;
+      }
+    }
+  }
+
+  .image-caption {
+    display: block;
+    font-size: 12px;
+    margin-top: 2px;
+    text-align: center;
+  }
+}
+
+
 p,
 li,
 dt,
