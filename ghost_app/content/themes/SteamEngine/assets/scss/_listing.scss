@@ -1,0 +1,29 @@
+.post-preview {
+	@extend %clearfix;
+
+	margin-bottom: 4em;
+	.readmore {
+		font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+		margin-top: 1em;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	margin: 20px auto;
+	max-width: $site-width-constraint;
+	width: 90%;
+
+	&.has-featured-image {
+		.post-excerpt {
+			float: left;
+			width: 60%;
+		}
+	}
+}
+.post-featured-image {
+	float: right;
+	width: 35%;
+	img {
+		width: 100%;
+	}
+}

@@ -28,7 +28,7 @@ Change the given `a href` addresses in `partials/footer-social.hbs` or replace t
 If you don't want the social icons section, replace `{{> footer-social}}` with `{{!> footer-social}}` in `default.hbs`.
 
 #### Customize the blog signature
-Replace the text, email address and author name in the file `partials/footer-author.hbs`.  
+Replace the text, email address and author name in the file `partials/footer-author.hbs`.
 To remove it, replace `{{> footer-author}}` with `{{!> footer-author}}` in `default.hbs`.
 
 #### Hide post author section
@@ -49,33 +49,6 @@ After you've created your Google Analytics account, change `{{!> google-analytic
 To customize the favicon and/or apple-touch-icon of your blog place your 16x16 `favicon.ico` and 152x152 `appletouchicon.png` in `/assets/img/`.
 
 #### JavaScript
-##### Smooth Scroll
-Steam features [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll): the default settings are at the bottom of `default.hbs`
-
-    <script>
-        smoothScroll.init({
-            speed: 800,
-            easing: 'easeInOutCubic',
-            updateURL: false,
-            offset: 125,
-        });
-    </script>
-  
-
-To use Smooth Scroll for footnotes (like in this [example post](https://steamthe.me/welcome-to-ghost/)), first locate the word or sentence in edit mode where you want to put the link to the footnote (generally a number of an ascending order) and add the following code
-
-    <sup id="reference1"><a data-scroll href="#footnote1">1</a></sup>
-
-where `reference1` is the unique name of the footnote link, `footnote1` is the unique name of the footnote itself and `1` the number of the note. Don't forget to add `data-scroll` if you want to benefit of the Smooth Scroll functionality. Do this for every footnote link you want to add, increasing the number of each identifier.
-
-Next, at the end of the post insert
-
-    ---
-    <ol class="notes">
-    <li id="footnote1">Here is the notation that the sentence above leads up to. <a data-scroll href="#reference1">↩</a></li>
-    </ol>
-
-which is the actual body of the footnote and is linked to the link you add before. Make sure `footnote1` and `reference1` match the link that calls them. Insert as many `<li>` tags as your footnote links and don't forget to add `data-scroll` or Smooth Scroll won't work.
 
 ##### highlight.js
 Steam also features [highlight.js](https://highlightjs.org) for syntax highlighting: you can disable it by removing the line

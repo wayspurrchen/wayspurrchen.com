@@ -1,0 +1,51 @@
+p,
+li,
+dt,
+dd {
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 28px;
+}
+dt {
+  font-weight: 400;
+}
+li {
+  padding-left: 0.8em;
+}
+pre {
+  font-family: Menlo, "Consolas", Courier, monospace;
+  color: #596364;
+  font-size: 1em;
+  line-height: 1.2em;
+  padding: 1em;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  background-color: #f7f7f7;
+}
+code {
+  font-family: Menlo, "Consolas", Courier, monospace;
+  font-size: 0.85em;
+  color: #596364;
+  background-color: #f7f7f7;
+  padding: 2px 4px;
+  line-height: 1.2em;
+}
+kbd {
+  display: inline-block;
+  margin-bottom: 0.4em;
+  padding: 1px 8px;
+  border: #ccc 1px solid;
+  color: #666;
+  text-shadow: #fff 0 1px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow:
+  0 1px 0 rgba(0, 0, 0, 0.2),
+  0 1px 0 0 #fff inset;
+}

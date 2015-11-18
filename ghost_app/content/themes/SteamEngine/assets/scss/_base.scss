@@ -1,5 +1,3 @@
-@import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
-@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 /* === Core Styles === */
 body {
   background-color: #ffffff;
@@ -12,85 +10,14 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-tap-highlight-color: rgba(0,0,0,0); /* prevent grey link highlight in iOS */
 }
-body * {
-  max-height: 1000000em;
-}
-h1,
-h2,
-h3,
-h4,
-p,
-li,
-dt,
-dd {
-  font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-}
-h1,
-.post-meta {
-  text-align: left;
-}
+
 a,
 a:visited {
-  /*color: #33cc99;*/
   text-decoration: none;
   transition: color ease 0.7s;
   -webkit-transition: color ease 0.7s;
 }
-a:focus,
-a:hover {
-  /*color: #178b6b;*/
-}
-p,
-li,
-dt,
-dd {
-  font-size: 17px;
-  font-weight: 100;
-  line-height: 28px;
-}
-dt {
-  font-weight: 400;
-}
-li {
-  padding-left: 0.8em;
-}
-pre {
-  font-family: Menlo, "Consolas", Courier, monospace;
-  color: #596364;
-  font-size: 1em;
-  line-height: 1.2em;
-  padding: 1em;
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-  background-color: #f7f7f7;
-}
-code {
-  font-family: Menlo, "Consolas", Courier, monospace;
-  font-size: 0.85em;
-  color: #596364;
-  background-color: #f7f7f7;
-  padding: 2px 4px;
-  line-height: 1.2em;
-}
-kbd {
-  display: inline-block;
-  margin-bottom: 0.4em;
-  padding: 1px 8px;
-  border: #ccc 1px solid;
-  color: #666;
-  text-shadow: #fff 0 1px 0;
-  font-size: 0.9em;
-  font-weight: bold;
-  background: #f4f4f4;
-  border-radius: 4px;
-  box-shadow:
-      0 1px 0 rgba(0, 0, 0, 0.2),
-      0 1px 0 0 #fff inset;
-}
+
 h1 {
   color: #151515;
   font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
@@ -100,67 +27,17 @@ h1 {
   margin: 0;
   padding: 0;
 }
-#site-head,
-article,
-article.preview,
+
+// Global settings
+$site-width-constraint: 700px;
+
 a.archive-link,
 .article-nav {
   margin: 20px auto;
-  max-width: 600px;
+  max-width: $site-width-constraint;
   width: 90%;
 }
-#site-head img {
-  max-width: 100%;
-}
-article.preview {
-  margin-bottom: 4em;
-}
-article.preview p.readmore {
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  margin-top: 1em;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-/* === Header === */
-#blog-logo {
-  display: block;
-  max-width: 100px;
-  margin: 50px auto 0;
-  text-align: center;
-}
-#blog-logo div.bloglogo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  -webkit-background-size: cover !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-color: #ffffff;
-}
-h1.blog-title,
-h2.blog-description {
-  text-align: left;
-}
-h1.blog-title {
-  font-size: 50px;
-  line-height: 52px;
-  margin-bottom: 5px;
-  padding: 0;
-}
-h1.blog-subtitle {
-  font-size: 26px;
-  line-height: 32px;
-  margin-top: -8px;
-  margin-left: 1px;
-  padding: 0;
-}
-h2.blog-description {
-  border-bottom: 1px solid #ecf0f1;
-  border-top: 1px solid #ecf0f1;
-  margin-bottom: 2em;
-  padding: .5em 1em;
-  line-height: 1.2em;
-}
+
 section.footer-description {
   margin-bottom: 1em;
 }
@@ -289,135 +166,7 @@ img.userimage {
   margin-right: 10px;
   float: left;
 }
-/* === Footer === */
-footer {
-  background: rgba(0, 0, 0, 0.05);
-  margin: 4em 0 0;
-  padding: 2em 0;
-  text-align: center;
-}
-footer section {
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 600px;
-  text-transform: uppercase;
-  width: 90%;
-}
-footer.post-footer {
-  background: none;
-  /*border-top: 1px solid #ecf0f1;*/
-  margin-top: 1em;
-}
-/* === Navigation and Pagination === */
-nav {
-  border-bottom: 1px solid #ecf0f1;
-  border-top: 1px solid #ecf0f1;
-  margin-bottom: 2em;
-  text-align: center;
-  margin: 20px auto 2em auto;
-  max-width: 600px;
-}
-nav ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-}
-nav ul li {
-  display: inline-block;
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  margin: 0;
-  padding: 0 .5em;
-  text-align: center;
-  text-transform: uppercase;
-}
-nav ul li a {
-  display: block;
-  padding: .5em 0;
-}
-nav.menu {
-  margin-bottom: 0.5em;
-}
-nav.menu li {
-  margin: 0 .5em;
-  padding: 0;
-}
-nav.menu li:last-child {
-  margin: 0;
-}
-@media only screen and (min-width: 320px) and (max-width: 662px) {
-  nav.menu li {
-    display: block;
-  }
-}
-nav.pagination li:first-child {
-  margin-left: 0;
-  margin-right: 0;
-  text-align: right;
-}
-nav.pagination li:last-child {
-  margin-left: 0;
-  margin-right: 0;
-  text-align: left;
-}
-a.archive-link {
-  border-bottom: 1px solid #ecf0f1;
-  border-top: 1px solid #ecf0f1;
-  display: block;
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  margin-bottom: 3em;
-  margin-top: 3em;
-  padding: .5em 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-.pagination {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  text-transform: uppercase;
-  font-size: 20px;
-  color: #596364;
-  text-align: center;
-  padding: 0.5em 0;
-}
-.pagination a {
-  /*color: #33cc99;*/
-}
-.older-posts,
-.newer-posts {
-  position: absolute;
-  display: inline-block;
-  padding: 0;
-  text-decoration: none;
-  transition: color ease 0.7s;
-  -webkit-transition: color ease 0.7s;
-}
-.older-posts {
-  right: 0;
-}
-.page-number {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-.newer-posts {
-  left: 0;
-}
-.older-posts:hover,
-.newer-posts:hover {
-  /*color: #178b6b;*/
-  text-decoration: none;
-}
+
 /* === Extras === */
 .gist {
   margin-top: 1em;
@@ -633,9 +382,6 @@ hr {
   background-color: #888;
 }
 
-.site-footer {
-  color: #899596;
-}
 
 section.footer-social {
   margin-bottom: 23px;
@@ -671,10 +417,31 @@ section.author .meta a {
 h1.posts-tagged {
   margin: -17px auto -17px;
   text-align: center;
-  max-width: 600px;
+  max-width: $site-width-constraint;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   color: #596364;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
+}
+
+%clearfix {
+  /**
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    contenteditable attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that are clearfixed.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  &:before,
+  &:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+
+  &:after {
+      clear: both;
+  }
 }

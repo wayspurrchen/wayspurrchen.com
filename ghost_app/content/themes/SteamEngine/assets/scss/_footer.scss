@@ -1,0 +1,24 @@
+/* === Footer === */
+footer {
+  background: rgba(0, 0, 0, 0.05);
+  margin: 4em 0 0;
+  padding: 2em 0;
+  text-align: center;
+}
+footer section {
+  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: $site-width-constraint;
+  text-transform: uppercase;
+  width: 90%;
+}
+footer.post-footer {
+  background: none;
+  /*border-top: 1px solid #ecf0f1;*/
+  margin-top: 1em;
+}
+.site-footer {
+  color: #899596;
+}

@@ -1,2 +1,6 @@
 node_modules/
 public/blog/
+**/.sass-cache/
+ghost_app/content/themes/SteamEngine/**/*.css
+ghost_app/content/themes/SteamEngine/**/*.css.map
+ghost_app/content/data/ghost-dev.db
