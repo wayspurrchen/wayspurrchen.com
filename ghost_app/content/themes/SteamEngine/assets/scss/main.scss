@@ -2,6 +2,11 @@
 @import "vendor/normalize";
 @import "vendor/highlight_default";
 @import "vendor/highlight_github";
+@import "vendor/tooltipster";
+@import "vendor/tooltipster_themes/tooltipster_light";
+@import "vendor/tooltipster_themes/tooltipster_noir";
+@import "vendor/tooltipster_themes/tooltipster_punk";
+@import "vendor/tooltipster_themes/tooltipster_shadow";
 
 // Main files
 @import "base";

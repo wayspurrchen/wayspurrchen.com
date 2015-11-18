@@ -22,6 +22,8 @@
 }
 
 .post {
+  counter-reset: footnote;
+
   // Standard <p> elements are constrained.
   p, h1, h2, h3, h4, h5, h6, ul {
     @include width-constraint;
@@ -56,6 +58,31 @@
     font-size: 12px;
     margin-top: 2px;
     text-align: center;
+  }
+
+  .footnote {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 15px;
+    color: #FFF;
+    width: 18px;
+    height: 18px;
+    background-color: #33CCB5;
+    counter-increment: footnote;
+
+    &:hover {
+      background-color: #4DDFC9;
+    }
+
+    &:before {
+      text-align: center;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      display: block;
+      content: counter(footnote);
+    }
   }
 }
 

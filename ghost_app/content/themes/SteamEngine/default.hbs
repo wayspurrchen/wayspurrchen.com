@@ -55,12 +55,15 @@
 
     {{ghost_foot}}
 
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="{{asset "js/vendor/jquery.1.11.3.min.js"}}"></script>
+    <script src="{{asset "js/vendor/tooltipster.min.js"}}"></script>
     <script src="{{asset "js/index.js"}}"></script>
     
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script src="{{asset "js/vendor/highlight.min.js"}}"></script>
 
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 
 </body>
 </html>
