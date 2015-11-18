@@ -4,12 +4,18 @@ var request = require('request');
 var queryString = require('query-string');
 var path = require('path');
 
+var ghost = require('./ghost_app/ghost-middleware');
+var allowedOrigins = [];
+
 // API
 var api = require('./server/api');
 app.use('/api', api);
 app.listen(process.env.WAYSPURRCHEN_COM_PORT || 80);
 
-var allowedOrigins = [];
+// Ghost blog server
+app.use( '/blog', ghost( {
+    config: path.join(__dirname, 'ghost_app/config.js')
+} ) );
 
 // Set static assets config here
 var publicDir = path.resolve(__dirname, 'public');
