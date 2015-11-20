@@ -1,6 +1,7 @@
 // Global settings
 $site-width-constraint: 700px;
 $popout-min: 940px;
+$popout-max: 1140px;
 
 /* === Core Styles === */
 body {
@@ -10,7 +11,7 @@ body {
   font-weight: 100;
   line-height: 1.6em;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-tap-highlight-color: rgba(0,0,0,0); /* prevent grey link highlight in iOS */
 }

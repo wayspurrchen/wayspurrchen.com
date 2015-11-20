@@ -84,6 +84,68 @@
       content: counter(footnote);
     }
   }
+
+  .toc {
+    @include width-constraint;
+    margin-top: 0;
+    .toc-header {
+      text-align: center;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    @media (min-width: $popout-min) {
+      &.left,
+      &.right {
+        background-color: #F5F5F5;
+        padding: 20px 10px;
+        width: 50%;
+
+        h1, h2, h3, h4, h5, h6 {
+          margin-top: 0;
+        }
+      }
+      &.left {
+        margin-left: -140px;
+        margin-right: 10px;
+        float: left;
+      }
+      &.right {
+        margin-left: 10px;
+        margin-right: -140px;
+        float: right;
+      }
+    }
+
+    @media (min-width: $popout-max) {
+      &.left,
+      &.right {
+        width: 60%;
+      }
+      &.left {
+        margin-left: -180px;
+      }
+      &.right {
+        margin-right: -180px;
+      }
+    }
+
+    // List nonsense
+    & > ul,
+    & > ol {
+      padding-left: 0;
+    }
+    ul, ol {
+      padding-left: 10px;
+    }
+    ul, li, ol {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
 }
 
 
