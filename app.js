@@ -3,6 +3,7 @@ var app = express();
 var request = require('request');
 var queryString = require('query-string');
 var path = require('path');
+var fs = require('fs');
 
 var ghost = require('./ghost_app/ghost-middleware');
 var allowedOrigins = [];
@@ -31,13 +32,15 @@ app.get( '/pixelsorter', function (req, res, next) {
 // to the SPA.
 app.get('*', function(req, res, next) {
   var requestPath = path.resolve(publicDir, req.path.substring(1));
-  path.exists(requestPath, function(exists) { 
-    if (exists) { 
+  fs.stat(requestPath, function(err, stat) {
+    if(err == null) {
       next();
-    } else {
+    } else if(err.code == 'ENOENT') {
       res.sendFile('index.html', {
         root: publicDir
       });
+    } else {
+      console.log('Some other error: ', err.code);
     }
   });
 });

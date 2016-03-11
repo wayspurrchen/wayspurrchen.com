@@ -295,8 +295,8 @@
 		<ul>
 			<% for (var i = 0; i < posts.length; i++) { %>
 				<li>
-					<a href="<%= posts[i].link %>"><%= posts[i].title %></a>
-					<span class="blog-date"><%= posts[i].date %></span>
+					<a href="<%= posts[i].link[0] %>"><%= posts[i].title[0] %></a>
+					<span class="blog-date"><%= posts[i].pubDate[0] %></span>
 				</li>
 			<% } %>
 		</ul>
