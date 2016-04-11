@@ -13,7 +13,7 @@
     "express": "^4.10.1",
     "express-subdomain": "^1.0.2",
     "feedparser": "^0.19.2",
-    "ghost": "^0.7.1",
+    "ghost": "0.7.1",
     "load-grunt-config": "^0.16.0",
     "query-string": "^1.0.0",
     "request": "^2.47.0"
