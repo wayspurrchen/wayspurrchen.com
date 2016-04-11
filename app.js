@@ -11,7 +11,7 @@ var allowedOrigins = [];
 // API
 var api = require('./server/api');
 app.use('/api', api);
-app.listen(process.env.WAYSPURRCHEN_COM_PORT || 80);
+app.listen(process.env.WAYSPURRCHEN_COM_PORT || 3000);
 
 // Ghost blog server
 app.use( '/blog', ghost( {
