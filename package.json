@@ -10,20 +10,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.10.1",
-    "express-subdomain": "^1.0.2",
-    "feedparser": "^0.19.2",
+    "express": "4.10.1",
+    "express-subdomain": "1.0.2",
+    "feedparser": "0.19.2",
     "ghost": "0.7.1",
-    "load-grunt-config": "^0.16.0",
-    "query-string": "^1.0.0",
-    "request": "^2.47.0"
+    "load-grunt-config": "0.16.0",
+    "query-string": "1.0.0",
+    "request": "2.47.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-jekyll": "^0.4.2",
-    "xml2js": "^0.4.16"
+    "grunt": "0.4.5",
+    "grunt-contrib-sass": "0.8.1",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-jekyll": "0.4.2",
+    "xml2js": "0.4.16"
   },
   "engines": {
     "node": "0.10.32"
