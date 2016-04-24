@@ -149,6 +149,10 @@ h1.blog-title a:hover {
 }
 section.post-content {
   max-width: 700px;
+  margin: 0 auto;
+}
+section.post-content iframe {
+  margin: 0 auto;
 }
 section.post-content img {
   display: block;
